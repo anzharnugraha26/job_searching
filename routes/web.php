@@ -25,6 +25,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware'=> ['auth','checkRole:admin'] , 'prefix' => 'admin'],function(){
     Route::get('/admin', 'Admin\DashboardController@index');
     Route::get('/input-lowongan' , 'Admin\LowonganController@index');
+    Route::post('/save-lowongan' , 'Admin\LowonganController@save');
+    Route::get('/daftar-lowongan' , 'Admin\LowonganController@daftar');
     //perusahaan
     Route::get('/perusahaan' , 'Admin\PerusahaanController@index');
 });
