@@ -48,7 +48,16 @@
                         Input Lowongan
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a class="dropdown-item" href="{{url('/input-lowongan')}}">Add Lowongan</a></li>
+                        <li><a class="dropdown-item" href="{{url('/admin/input-lowongan')}}">Add Lowongan</a></li>
+                        <li><a class="dropdown-item" href="#">View Lowongan</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Perusahaan
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="{{url('/admin/perusahaan')}}">daftar perusahaan</a></li>
                         <li><a class="dropdown-item" href="#">View Lowongan</a></li>
                       </ul>
                     </li>
