@@ -24,4 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=> ['auth','checkRole:admin'] ],function(){
     Route::get('/admin', 'Admin\DashboardController@index');
+    Route::get('/input-lowongan' , 'Admin\LowonganController@index');
 });
